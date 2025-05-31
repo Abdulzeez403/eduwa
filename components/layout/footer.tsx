@@ -1,13 +1,13 @@
-import Link from 'next/link';
-import { Separator } from '@/components/ui/separator';
-import { 
-  Code, 
-  Facebook, 
-  Twitter, 
-  Instagram, 
-  Linkedin, 
-  Github
-} from 'lucide-react';
+import Link from "next/link";
+import { Separator } from "@/components/ui/separator";
+import {
+  Code,
+  Facebook,
+  Twitter,
+  Instagram,
+  Linkedin,
+  Github,
+} from "lucide-react";
 
 export function Footer() {
   const currentYear = new Date().getFullYear();
@@ -22,7 +22,8 @@ export function Footer() {
               <span className="text-xl font-bold">Eduwa</span>
             </div>
             <p className="text-sm text-muted-foreground">
-              Transforming ideas into exceptional digital experiences through innovative software solutions.
+              Transforming ideas into exceptional digital experiences through
+              innovative software solutions..
             </p>
             <div className="flex space-x-4">
               <Link href="#" aria-label="Facebook">
@@ -47,22 +48,34 @@ export function Footer() {
             <h3 className="font-semibold mb-4">Company</h3>
             <ul className="space-y-2">
               <li>
-                <Link href="#about" className="text-sm text-muted-foreground hover:text-foreground transition-colors">
+                <Link
+                  href="#about"
+                  className="text-sm text-muted-foreground hover:text-foreground transition-colors"
+                >
                   About Us
                 </Link>
               </li>
               <li>
-                <Link href="#services" className="text-sm text-muted-foreground hover:text-foreground transition-colors">
+                <Link
+                  href="#services"
+                  className="text-sm text-muted-foreground hover:text-foreground transition-colors"
+                >
                   Services
                 </Link>
               </li>
               <li>
-                <Link href="#" className="text-sm text-muted-foreground hover:text-foreground transition-colors">
+                <Link
+                  href="#"
+                  className="text-sm text-muted-foreground hover:text-foreground transition-colors"
+                >
                   Careers
                 </Link>
               </li>
               <li>
-                <Link href="#" className="text-sm text-muted-foreground hover:text-foreground transition-colors">
+                <Link
+                  href="#"
+                  className="text-sm text-muted-foreground hover:text-foreground transition-colors"
+                >
                   Blog
                 </Link>
               </li>
@@ -73,22 +86,34 @@ export function Footer() {
             <h3 className="font-semibold mb-4">Resources</h3>
             <ul className="space-y-2">
               <li>
-                <Link href="#" className="text-sm text-muted-foreground hover:text-foreground transition-colors">
+                <Link
+                  href="#"
+                  className="text-sm text-muted-foreground hover:text-foreground transition-colors"
+                >
                   Case Studies
                 </Link>
               </li>
               <li>
-                <Link href="#" className="text-sm text-muted-foreground hover:text-foreground transition-colors">
+                <Link
+                  href="#"
+                  className="text-sm text-muted-foreground hover:text-foreground transition-colors"
+                >
                   Documentation
                 </Link>
               </li>
               <li>
-                <Link href="#" className="text-sm text-muted-foreground hover:text-foreground transition-colors">
+                <Link
+                  href="#"
+                  className="text-sm text-muted-foreground hover:text-foreground transition-colors"
+                >
                   Resources
                 </Link>
               </li>
               <li>
-                <Link href="#faq" className="text-sm text-muted-foreground hover:text-foreground transition-colors">
+                <Link
+                  href="#faq"
+                  className="text-sm text-muted-foreground hover:text-foreground transition-colors"
+                >
                   FAQ
                 </Link>
               </li>
@@ -102,12 +127,18 @@ export function Footer() {
                 123 Tech Street, Silicon Valley, CA 94043
               </li>
               <li>
-                <Link href="mailto:info@eduwa.com" className="text-sm text-muted-foreground hover:text-foreground transition-colors">
+                <Link
+                  href="mailto:info@eduwa.com"
+                  className="text-sm text-muted-foreground hover:text-foreground transition-colors"
+                >
                   info@eduwa.com
                 </Link>
               </li>
               <li>
-                <Link href="tel:+11234567890" className="text-sm text-muted-foreground hover:text-foreground transition-colors">
+                <Link
+                  href="tel:+11234567890"
+                  className="text-sm text-muted-foreground hover:text-foreground transition-colors"
+                >
                   +1 (123) 456-7890
                 </Link>
               </li>
@@ -122,13 +153,22 @@ export function Footer() {
             © {currentYear} Eduwa. All rights reserved.
           </p>
           <div className="flex space-x-4 mt-4 md:mt-0">
-            <Link href="#" className="text-xs text-muted-foreground hover:text-foreground transition-colors">
+            <Link
+              href="#"
+              className="text-xs text-muted-foreground hover:text-foreground transition-colors"
+            >
               Privacy Policy
             </Link>
-            <Link href="#" className="text-xs text-muted-foreground hover:text-foreground transition-colors">
+            <Link
+              href="#"
+              className="text-xs text-muted-foreground hover:text-foreground transition-colors"
+            >
               Terms of Service
             </Link>
-            <Link href="#" className="text-xs text-muted-foreground hover:text-foreground transition-colors">
+            <Link
+              href="#"
+              className="text-xs text-muted-foreground hover:text-foreground transition-colors"
+            >
               Cookie Policy
             </Link>
           </div>
