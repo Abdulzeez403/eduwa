@@ -152,7 +152,7 @@ export function PricingSection() {
                   {plan.popular && (
                     <div className="absolute -top-4 left-0 right-0 mx-auto w-fit">
                       <Badge
-                        variant="default\"
+                        variant="default"
                         className="bg-primary text-primary-foreground"
                       >
                         Most Popular
@@ -209,7 +209,7 @@ export function PricingSection() {
                   {plan.popular && (
                     <div className="absolute -top-4 left-0 right-0 mx-auto w-fit">
                       <Badge
-                        variant="default\"
+                        variant="default"
                         className="bg-primary text-primary-foreground"
                       >
                         Most Popular
