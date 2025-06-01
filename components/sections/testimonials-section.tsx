@@ -14,8 +14,8 @@ const testimonials = [
   {
     quote:
       "The mobile app developed by Eduwa has revolutionized how we interact with our customers. Their attention to detail and user experience expertise has set us apart from competitors.",
-    name: "Michael Chen",
-    position: "CTO, HealthConnect",
+    name: "Mujeeb Adewale",
+    position: "CEO , Adestaly",
     image:
       "https://images.pexels.com/photos/614810/pexels-photo-614810.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
   },
@@ -57,7 +57,7 @@ export function TestimonialsSection() {
                 </div>
 
                 <p className="italic text-muted-foreground mb-6">
-                  "{testimonial.quote}"
+                  &quot;{testimonial.quote}&quot;
                 </p>
 
                 <div className="flex items-center">
