@@ -79,7 +79,6 @@ export function PromoModal() {
               <h2 className="text-3xl font-bold tracking-tight">
                 Get a Free Website Build!🚀
               </h2>
-
               <p className="text-muted-foreground text-lg max-w-md mx-auto">
                 We're selecting{" "}
                 <span className="text-primary font-semibold">
@@ -87,7 +86,6 @@ export function PromoModal() {
                 </span>{" "}
                 for our beta program to build their MVPs completely free!
               </p>
-
               {/* Countdown Timer */}
               <div className="grid grid-cols-4 gap-3 my-8">
                 {[
@@ -109,27 +107,33 @@ export function PromoModal() {
                   </div>
                 ))}
               </div>
-
               {/* Benefits */}
               <div className="bg-muted/30 rounded-lg p-4 mb-6">
                 <ul className="text-sm text-left space-y-2">
                   <li className="flex items-center">
                     <div className="w-1.5 h-1.5 rounded-full bg-primary mr-2" />
-                    Full MVP Development
+                    2-Page Custom Website
+                  </li>
+                  <li className="flex items-center">
+                    <div className="w-1.5 h-1.5 rounded-full bg-primary mr-2" />
+                    Mobile Responsive Design
+                  </li>
+                  <li className="flex items-center">
+                    <div className="w-1.5 h-1.5 rounded-full bg-primary mr-2" />
+                    SEO Optimization
                   </li>
                   <li className="flex items-center">
                     <div className="w-1.5 h-1.5 rounded-full bg-primary mr-2" />
                     Technical Consultation
                   </li>
+
                   <li className="flex items-center">
                     <div className="w-1.5 h-1.5 rounded-full bg-primary mr-2" />
-                    3 Months Support
+                    3 weeks Support
                   </li>
                 </ul>
               </div>
-
               {/* CTA Button */}
-
               <Button
                 size="lg"
                 className="w-full text-base group"
@@ -144,6 +148,19 @@ export function PromoModal() {
                 <ArrowRight className="ml-2 h-4 w-4 group-hover:translate-x-1 transition-transform" />
               </Button>
 
+              <Button
+                size="lg"
+                className="w-full text-base group"
+                onClick={() =>
+                  window.open(
+                    "https://wa.me/2348063249490?text=Hi%20I%27m%20interested%20in%20the%20free%20website%20build!",
+                    "_blank"
+                  )
+                }
+              >
+                Apply on WhatsApp
+                <ArrowRight className="ml-2 h-4 w-4 group-hover:translate-x-1 transition-transform" />
+              </Button>
               {/* Don't Show Again */}
               <div className="flex items-center justify-center space-x-2 pt-4">
                 <Checkbox
