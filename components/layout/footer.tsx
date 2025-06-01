@@ -124,7 +124,7 @@ export function Footer() {
             <h3 className="font-semibold mb-4">Contact</h3>
             <ul className="space-y-2">
               <li className="text-sm text-muted-foreground">
-                123 Tech Street, Silicon Valley, CA 94043
+                N0 60, Al-hikimah Road, Ilorin, Kwara, Nigeria
               </li>
               <li>
                 <Link
@@ -136,10 +136,10 @@ export function Footer() {
               </li>
               <li>
                 <Link
-                  href="tel:+11234567890"
+                  href="tel:+2348063249490"
                   className="text-sm text-muted-foreground hover:text-foreground transition-colors"
                 >
-                  +1 (123) 456-7890
+                  +2348-0632-49490
                 </Link>
               </li>
             </ul>

@@ -44,20 +44,30 @@ export function ContactSection() {
     setFormData((prev) => ({ ...prev, service: value }));
   };
 
-  const handleSubmit = (e: React.FormEvent) => {
+  const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
     setIsSubmitting(true);
 
-    // Simulate form submission
-    setTimeout(() => {
-      setIsSubmitting(false);
+    try {
+      const response = await fetch(
+        "https://formsubmit.co/f9555b1ce962fbae9609c27a7df877e5",
+        {
+          method: "POST",
+          headers: {
+            "Content-Type": "application/json",
+            Accept: "application/json",
+          },
+          body: JSON.stringify(formData),
+        }
+      );
+
+      if (!response.ok) throw new Error("Failed to send");
+
       toast({
-        title: "Form submitted successfully!",
+        title: "Message sent!",
         description: "We'll get back to you soon.",
-        variant: "default",
       });
 
-      // Reset form
       setFormData({
         name: "",
         email: "",
@@ -65,7 +75,15 @@ export function ContactSection() {
         service: "",
         message: "",
       });
-    }, 1500);
+    } catch (error) {
+      toast({
+        title: "Something went wrong!",
+        description: "Please try again later.",
+        variant: "destructive",
+      });
+    } finally {
+      setIsSubmitting(false);
+    }
   };
 
   return (
@@ -231,7 +249,7 @@ export function ContactSection() {
                         href="tel:+11234567890"
                         className="text-sm text-primary hover:underline"
                       >
-                        +1 (234) 806-324-9490
+                        +2348-0632-49490
                       </a>
                     </div>
                   </div>
