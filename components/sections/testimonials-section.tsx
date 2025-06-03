@@ -5,25 +5,25 @@ import { Quote } from "lucide-react";
 const testimonials = [
   {
     quote:
-      "Eduwa transformed our business with their exceptional web development services. They delivered a platform that exceeded our expectations and has significantly increased our online sales.",
-    name: "Sarah Johnson",
-    position: "CEO, RetailTech",
+      "Eduwa’s learning management system transformed how our school manages courses and tracks student progress. The platform is intuitive and has boosted our student engagement tremendously.",
+    name: "Dr. Amanda Blake",
+    position: "Principal, Greenfield High School",
     image:
       "https://images.pexels.com/photos/1239291/pexels-photo-1239291.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
   },
   {
     quote:
-      "The mobile app developed by Eduwa has revolutionized how we interact with our customers. Their attention to detail and user experience expertise has set us apart from competitors.",
-    name: "Mujeeb Adewale",
-    position: "CEO , Adestaly",
+      "The Eduwa educational app has revolutionized remote learning for our university students. It’s user-friendly and offers personalized content that caters to diverse learning needs.",
+    name: "Prof. Samuel Lee",
+    position: "Head of E-Learning, State University",
     image:
       "https://images.pexels.com/photos/614810/pexels-photo-614810.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
   },
   {
     quote:
-      "Working with Eduwa on our IoT solution was a game-changer. Their expertise in embedded systems and seamless integration capabilities delivered a product that's now central to our operations.",
-    name: "Emily Rodriguez",
-    position: "Product Manager, SmartTech Industries",
+      "Implementing Eduwa’s interactive teaching tools in our classrooms has improved student participation and knowledge retention. Their support team is also incredibly responsive.",
+    name: "Jessica Carter",
+    position: "Math Teacher, Bright Future Academy",
     image:
       "https://images.pexels.com/photos/774909/pexels-photo-774909.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
   },
@@ -38,16 +38,16 @@ export function TestimonialsSection() {
             Testimonials
           </Badge>
           <h2 className="text-3xl md:text-4xl font-bold tracking-tight mb-4">
-            What Our <span className="text-primary">Clients Say</span>
+            What Educators <span className="text-primary">Say About Us</span>
           </h2>
           <p className="text-muted-foreground max-w-2xl mx-auto">
-            Don't just take our word for it. Hear from our satisfied clients
-            about their experience working with Eduwa.
+            See how Eduwa’s education solutions empower schools, teachers, and
+            students worldwide.
           </p>
         </div>
 
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
-          {testimonials.map((testimonial, index) => (
+          {testimonials.map(({ quote, name, position, image }, index) => (
             <Card key={index} className="bg-background relative">
               <CardContent className="pt-10 pb-6">
                 <div className="absolute -top-5 left-6">
@@ -57,22 +57,20 @@ export function TestimonialsSection() {
                 </div>
 
                 <p className="italic text-muted-foreground mb-6">
-                  &quot;{testimonial.quote}&quot;
+                  &quot;{quote}&quot;
                 </p>
 
                 <div className="flex items-center">
                   <div className="w-12 h-12 rounded-full overflow-hidden mr-4">
                     <img
-                      src={testimonial.image}
-                      alt={testimonial.name}
+                      src={image}
+                      alt={`Photo of ${name}`}
                       className="w-full h-full object-cover"
                     />
                   </div>
                   <div>
-                    <p className="font-medium">{testimonial.name}</p>
-                    <p className="text-sm text-muted-foreground">
-                      {testimonial.position}
-                    </p>
+                    <p className="font-medium">{name}</p>
+                    <p className="text-sm text-muted-foreground">{position}</p>
                   </div>
                 </div>
               </CardContent>
@@ -83,25 +81,25 @@ export function TestimonialsSection() {
         <div className="mt-16 bg-primary/5 rounded-lg p-8">
           <div className="grid grid-cols-1 md:grid-cols-4 gap-8 text-center">
             <div>
-              <p className="text-3xl font-bold text-primary mb-2">98%</p>
+              <p className="text-3xl font-bold text-primary mb-2">99%</p>
               <p className="text-sm text-muted-foreground">
-                Client Satisfaction
+                Student Engagement Rate
               </p>
             </div>
             <div>
-              <p className="text-3xl font-bold text-primary mb-2">94%</p>
+              <p className="text-3xl font-bold text-primary mb-2">95%</p>
               <p className="text-sm text-muted-foreground">
-                Projects Delivered On Time
+                Teacher Satisfaction
               </p>
             </div>
             <div>
-              <p className="text-3xl font-bold text-primary mb-2">89%</p>
-              <p className="text-sm text-muted-foreground">Repeat Business</p>
+              <p className="text-3xl font-bold text-primary mb-2">92%</p>
+              <p className="text-sm text-muted-foreground">Course Completion</p>
             </div>
             <div>
               <p className="text-3xl font-bold text-primary mb-2">100%</p>
               <p className="text-sm text-muted-foreground">
-                Commitment to Excellence
+                Support & Training Excellence
               </p>
             </div>
           </div>

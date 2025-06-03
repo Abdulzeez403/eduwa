@@ -22,8 +22,8 @@ export function Footer() {
               <span className="text-xl font-bold">Eduwa</span>
             </div>
             <p className="text-sm text-muted-foreground">
-              Transforming ideas into exceptional digital experiences through
-              innovative software solutions..
+              Empowering learners and educators with innovative digital
+              education solutions.
             </p>
             <div className="flex space-x-4">
               <Link href="#" aria-label="Facebook">
@@ -60,7 +60,7 @@ export function Footer() {
                   href="#services"
                   className="text-sm text-muted-foreground hover:text-foreground transition-colors"
                 >
-                  Services
+                  Solutions
                 </Link>
               </li>
               <li>
@@ -73,7 +73,7 @@ export function Footer() {
               </li>
               <li>
                 <Link
-                  href="#"
+                  href="#blog"
                   className="text-sm text-muted-foreground hover:text-foreground transition-colors"
                 >
                   Blog
@@ -87,7 +87,7 @@ export function Footer() {
             <ul className="space-y-2">
               <li>
                 <Link
-                  href="#"
+                  href="#casestudies"
                   className="text-sm text-muted-foreground hover:text-foreground transition-colors"
                 >
                   Case Studies
@@ -95,7 +95,7 @@ export function Footer() {
               </li>
               <li>
                 <Link
-                  href="#"
+                  href="#documentation"
                   className="text-sm text-muted-foreground hover:text-foreground transition-colors"
                 >
                   Documentation
@@ -103,10 +103,10 @@ export function Footer() {
               </li>
               <li>
                 <Link
-                  href="#"
+                  href="#helpcenter"
                   className="text-sm text-muted-foreground hover:text-foreground transition-colors"
                 >
-                  Resources
+                  Help Center
                 </Link>
               </li>
               <li>
@@ -124,14 +124,14 @@ export function Footer() {
             <h3 className="font-semibold mb-4">Contact</h3>
             <ul className="space-y-2">
               <li className="text-sm text-muted-foreground">
-                N0 60, Al-hikimah Road, Ilorin, Kwara, Nigeria
+                No 60, Al-Hikimah Road, Ilorin, Kwara, Nigeria
               </li>
               <li>
                 <Link
-                  href="mailto:info@eduwa.com"
+                  href="mailto:support@eduwa.com"
                   className="text-sm text-muted-foreground hover:text-foreground transition-colors"
                 >
-                  info@eduwa.com
+                  support@eduwa.com
                 </Link>
               </li>
               <li>
@@ -139,7 +139,7 @@ export function Footer() {
                   href="tel:+2348063249490"
                   className="text-sm text-muted-foreground hover:text-foreground transition-colors"
                 >
-                  +2348-0632-49490
+                  +234 806 324 9490
                 </Link>
               </li>
             </ul>
@@ -154,19 +154,19 @@ export function Footer() {
           </p>
           <div className="flex space-x-4 mt-4 md:mt-0">
             <Link
-              href="#"
+              href="#privacy"
               className="text-xs text-muted-foreground hover:text-foreground transition-colors"
             >
               Privacy Policy
             </Link>
             <Link
-              href="#"
+              href="#terms"
               className="text-xs text-muted-foreground hover:text-foreground transition-colors"
             >
               Terms of Service
             </Link>
             <Link
-              href="#"
+              href="#cookies"
               className="text-xs text-muted-foreground hover:text-foreground transition-colors"
             >
               Cookie Policy

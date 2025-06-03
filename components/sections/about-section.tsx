@@ -44,11 +44,13 @@ export function AboutSection() {
             About Us
           </Badge>
           <h2 className="text-3xl md:text-4xl font-bold tracking-tight mb-4">
-            Crafting Digital <span className="text-primary">Excellence</span>
+            Empowering <span className="text-primary">Education</span> Through
+            Innovation
           </h2>
           <p className="text-muted-foreground max-w-2xl mx-auto">
-            We're more than just developers – we're your technology partners in
-            building exceptional digital experiences.
+            At Eduwa, we transform traditional learning into dynamic digital
+            experiences by building powerful, accessible, and scalable
+            educational solutions.
           </p>
         </div>
 
@@ -60,13 +62,13 @@ export function AboutSection() {
                 <div className="w-12 h-12 rounded-full bg-primary/10 flex items-center justify-center">
                   <Code className="h-6 w-6 text-primary" />
                 </div>
-                <h3 className="text-2xl font-bold">Our Story</h3>
+                <h3 className="text-2xl font-bold">Our Journey</h3>
               </div>
               <p className="text-muted-foreground mb-6">
-                Founded in 2018, Eduwa emerged from a vision to bridge the gap
-                between complex technology and business success. Our journey
-                began with a small team of passionate developers and has evolved
-                into a full-spectrum digital solutions provider.
+                Eduwa was founded with a vision to revolutionize the way
+                knowledge is delivered. What started as a small edtech
+                initiative is now a comprehensive learning platform impacting
+                students, educators, and institutions globally.
               </p>
               <div className="flex items-center gap-4">
                 <Button variant="outline" asChild>
@@ -81,27 +83,27 @@ export function AboutSection() {
           <div className="grid grid-cols-2 gap-4">
             <Card className="p-6 bg-primary text-primary-foreground">
               <div className="text-3xl font-bold mb-2">
-                <CountUpAnimation end={200} />
+                <CountUpAnimation end={500} />
               </div>
-              <p className="text-primary-foreground/80">Projects Completed</p>
+              <p className="text-primary-foreground/80">Courses Delivered</p>
             </Card>
             <Card className="p-6">
               <div className="text-3xl font-bold mb-2 text-primary">
-                <CountUpAnimation end={50} />
+                <CountUpAnimation end={120} />
               </div>
-              <p className="text-muted-foreground">Happy Clients</p>
+              <p className="text-muted-foreground">Institutions Served</p>
             </Card>
             <Card className="p-6">
               <div className="text-3xl font-bold mb-2 text-primary">
-                <CountUpAnimation end={25} />
+                <CountUpAnimation end={80} />
               </div>
-              <p className="text-muted-foreground">Team Members</p>
+              <p className="text-muted-foreground">Qualified Instructors</p>
             </Card>
             <Card className="p-6 bg-accent text-accent-foreground">
               <div className="text-3xl font-bold mb-2">
-                <CountUpAnimation end={5} />
+                <CountUpAnimation end={6} />
               </div>
-              <p className="text-accent-foreground/80">Years of Excellence</p>
+              <p className="text-accent-foreground/80">Years of Impact</p>
             </Card>
           </div>
         </div>
@@ -113,10 +115,10 @@ export function AboutSection() {
               <div className="w-12 h-12 rounded-full bg-primary/10 flex items-center justify-center mb-4">
                 <Globe className="h-6 w-6 text-primary" />
               </div>
-              <h3 className="text-xl font-semibold mb-2">Global Reach</h3>
+              <h3 className="text-xl font-semibold mb-2">Global Presence</h3>
               <p className="text-muted-foreground">
-                Serving clients worldwide with innovative solutions that
-                transcend geographical boundaries.
+                Our educational tools reach learners across continents, breaking
+                the barriers of location and access.
               </p>
             </Card>
           </div>
@@ -127,10 +129,10 @@ export function AboutSection() {
               <div className="w-12 h-12 rounded-full bg-primary/10 flex items-center justify-center mb-4">
                 <Award className="h-6 w-6 text-primary" />
               </div>
-              <h3 className="text-xl font-semibold mb-2">Quality First</h3>
+              <h3 className="text-xl font-semibold mb-2">Trusted Quality</h3>
               <p className="text-muted-foreground">
-                Committed to delivering exceptional quality in every project we
-                undertake.
+                Accredited platforms and tools recognized by educators and
+                academic institutions worldwide.
               </p>
             </Card>
           </div>
@@ -141,10 +143,10 @@ export function AboutSection() {
               <div className="w-12 h-12 rounded-full bg-primary/10 flex items-center justify-center mb-4">
                 <Users className="h-6 w-6 text-primary" />
               </div>
-              <h3 className="text-xl font-semibold mb-2">Expert Team</h3>
+              <h3 className="text-xl font-semibold mb-2">Community Focus</h3>
               <p className="text-muted-foreground">
-                A diverse team of skilled professionals dedicated to your
-                success.
+                Building an engaged learning ecosystem that supports students,
+                parents, and teachers alike.
               </p>
             </Card>
           </div>
@@ -152,29 +154,32 @@ export function AboutSection() {
 
         <div className="bg-muted/30 rounded-2xl p-8">
           <h3 className="text-2xl font-bold mb-6 text-center">
-            Our Core Values
+            Our Core Educational Values
           </h3>
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
             {[
               {
                 icon: Rocket,
                 title: "Innovation",
-                description: "Pushing boundaries with cutting-edge solutions",
+                description:
+                  "Empowering learning through the latest technology",
               },
               {
                 icon: Target,
                 title: "Excellence",
-                description: "Delivering outstanding results consistently",
+                description: "Delivering top-tier digital learning experiences",
               },
               {
                 icon: Zap,
-                title: "Agility",
-                description: "Adapting quickly to changing needs",
+                title: "Accessibility",
+                description:
+                  "Making education available to all, anytime, anywhere",
               },
               {
                 icon: Users,
                 title: "Collaboration",
-                description: "Working together for shared success",
+                description:
+                  "Partnering with educators, institutions, and students",
               },
             ].map((value, index) => (
               <div key={index} className="flex items-start gap-4">

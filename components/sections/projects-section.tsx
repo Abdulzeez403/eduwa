@@ -13,35 +13,34 @@ import Link from "next/link";
 
 const projects = [
   {
-    title: "Real State Management System",
+    title: "Online Learning Management System",
     description:
-      "A robust platform for managing real estate listings, client interactions, and transaction workflows.",
+      "A scalable platform for managing courses, assignments, and student progress with interactive features.",
     image:
-      "https://images.pexels.com/photos/3184299/pexels-photo-3184299.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
-    category: "Web Development",
-
-    tags: ["Next Js", "Tailwind", "Supabase"],
-    link: "https//real-state-management-system.vercel.app/",
+      "https://images.pexels.com/photos/4145190/pexels-photo-4145190.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
+    category: "EdTech",
+    tags: ["React", "Node.js", "Firebase"],
+    link: "https://online-learning-system.example.com",
   },
   {
-    title: "E-Commerce Platform",
+    title: "Virtual Classroom Application",
     description:
-      "A fully-featured online shopping platform with inventory management, payment processing, and analytics.",
+      "A real-time video and chat solution for educators and students to conduct engaging virtual classes.",
     image:
-      "https://abdulazeezsodiq.vercel.app/_next/image?url=%2Fecommerce.png&w=640&q=75",
+      "https://images.pexels.com/photos/1181406/pexels-photo-1181406.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
     category: "Web Development",
-    tags: ["Wordpress", "Woocommerce", "PHP"],
-    link: "https://ecommerce.goolhealthandsport.com",
+    tags: ["Next.js", "WebRTC", "Tailwind CSS"],
+    link: "https://virtual-classroom.example.com",
   },
   {
-    title: "Smart Home IoT System",
+    title: "Student Performance Analytics",
     description:
-      "An integrated system for controlling and monitoring smart home devices with voice commands and mobile app.",
+      "An analytics dashboard providing insights into student performance and learning trends for educators.",
     image:
-      "https://images.pexels.com/photos/1714208/pexels-photo-1714208.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
-    category: "Embedded Systems",
-    tags: ["IoT", "Embedded C", "Cloud Integration"],
-    link: "https//real-state-management-system.vercel.app/",
+      "https://images.pexels.com/photos/669615/pexels-photo-669615.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
+    category: "Data Analytics",
+    tags: ["Python", "Django", "Chart.js"],
+    link: "https://student-analytics.example.com",
   },
 ];
 
@@ -54,11 +53,12 @@ export function ProjectsSection() {
             Our Portfolio
           </Badge>
           <h2 className="text-3xl md:text-4xl font-bold tracking-tight mb-4">
-            Projects That <span className="text-primary">Inspire</span>
+            Projects That{" "}
+            <span className="text-primary">Inspire Education</span>
           </h2>
           <p className="text-muted-foreground max-w-2xl mx-auto">
-            Explore our showcase of innovative software solutions that have
-            helped businesses transform and grow.
+            Explore our showcase of innovative education technology solutions
+            that empower learners and educators worldwide.
           </p>
         </div>
 
@@ -102,6 +102,7 @@ export function ProjectsSection() {
                   <Link
                     href={project.link}
                     target="_blank"
+                    rel="noopener noreferrer"
                     className="flex items-center"
                   >
                     View Project

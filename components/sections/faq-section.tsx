@@ -1,34 +1,39 @@
-'use client';
+"use client";
 
-import { Badge } from '@/components/ui/badge';
+import { Badge } from "@/components/ui/badge";
 import {
   Accordion,
   AccordionContent,
   AccordionItem,
   AccordionTrigger,
-} from '@/components/ui/accordion';
+} from "@/components/ui/accordion";
 
 const faqs = [
   {
-    question: "What is your development process?",
-    answer: "Our development process typically includes discovery and planning, design and prototyping, development and testing, and deployment and support. We follow agile methodologies to ensure flexibility and regular client feedback throughout the project."
+    question: "What features does Eduwa’s platform offer?",
+    answer:
+      "Eduwa offers a comprehensive suite of features including course management, student progress tracking, interactive quizzes, video lectures, discussion forums, and personalized learning paths tailored to each student’s needs.",
   },
   {
-    question: "How long does it take to develop a website or application?",
-    answer: "Project timelines vary depending on the complexity and scope of the project. A simple website might take 4-6 weeks, while a complex application could take several months. During our initial consultation, we'll provide you with a detailed timeline based on your specific requirements."
+    question: "Can Eduwa support remote and hybrid learning?",
+    answer:
+      "Absolutely! Eduwa is designed to facilitate both remote and hybrid learning environments. It supports live virtual classrooms, asynchronous content delivery, and seamless communication between teachers and students.",
   },
   {
-    question: "Do you provide maintenance and support after launch?",
-    answer: "Yes, we offer ongoing maintenance and support services to ensure your website or application continues to run smoothly. Our support packages include regular updates, security patches, performance optimization, and technical assistance."
+    question: "How secure is the Eduwa platform?",
+    answer:
+      "Security is a top priority. Eduwa uses industry-standard encryption, secure authentication, and regular security audits to protect student data and ensure compliance with privacy regulations like FERPA and GDPR.",
   },
   {
-    question: "What technologies do you work with?",
-    answer: "We work with a wide range of technologies including React, Angular, Vue.js, Node.js, Python, PHP, .NET, React Native, Flutter, and many more. We select the most appropriate technology stack based on your project requirements and business goals."
+    question: "Is there training available for teachers and administrators?",
+    answer:
+      "Yes, we provide comprehensive onboarding and continuous training sessions for teachers and administrators to get the most out of the Eduwa platform. Our support team is also available to assist anytime.",
   },
   {
-    question: "How do you handle project pricing?",
-    answer: "We offer flexible pricing models including fixed-price projects, time and materials, and retainer-based services. After understanding your requirements, we'll provide a detailed proposal with transparent pricing that aligns with your budget and project needs."
-  }
+    question: "What kind of support is available if I run into issues?",
+    answer:
+      "We offer 24/7 support through email, chat, and phone. Additionally, our online knowledge base and community forums provide helpful resources and peer support to quickly resolve common issues.",
+  },
 ];
 
 export function FaqSection() {
@@ -36,15 +41,18 @@ export function FaqSection() {
     <section id="faq" className="py-16 md:py-24">
       <div className="container mx-auto px-4 md:px-6">
         <div className="text-center mb-12">
-          <Badge variant="outline" className="mb-3">FAQ</Badge>
+          <Badge variant="outline" className="mb-3">
+            FAQ
+          </Badge>
           <h2 className="text-3xl md:text-4xl font-bold tracking-tight mb-4">
             Frequently Asked <span className="text-primary">Questions</span>
           </h2>
           <p className="text-muted-foreground max-w-2xl mx-auto">
-            Find answers to common questions about our services, process, and approach to software development.
+            Answers to common questions about Eduwa’s education platform,
+            features, security, and support.
           </p>
         </div>
-        
+
         <div className="max-w-3xl mx-auto">
           <Accordion type="single" collapsible className="w-full">
             {faqs.map((faq, index) => (
@@ -52,22 +60,23 @@ export function FaqSection() {
                 <AccordionTrigger className="text-left">
                   {faq.question}
                 </AccordionTrigger>
-                <AccordionContent>
-                  {faq.answer}
-                </AccordionContent>
+                <AccordionContent>{faq.answer}</AccordionContent>
               </AccordionItem>
             ))}
           </Accordion>
         </div>
-        
+
         <div className="mt-12 text-center">
           <p className="text-muted-foreground">
             Have more questions? We're here to help!
           </p>
           <p className="font-medium mt-2">
-            Contact us at{' '}
-            <a href="mailto:info@eduwa.com" className="text-primary hover:underline">
-              info@eduwa.com
+            Contact us at{" "}
+            <a
+              href="mailto:support@eduwa.com"
+              className="text-primary hover:underline"
+            >
+              support@eduwa.com
             </a>
           </p>
         </div>

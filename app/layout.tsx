@@ -4,6 +4,8 @@ import { Inter } from "next/font/google";
 import { Providers } from "./providers";
 import { Toaster } from "@/components/ui/toaster";
 import { PromoModal } from "@/components/promo-modal";
+import { Header } from "@/components/layout/header";
+import { Footer } from "@/components/layout/footer";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -21,11 +23,13 @@ export default function RootLayout({
   return (
     <html lang="en" suppressHydrationWarning>
       <body className={inter.className}>
+        <Header />
         <Providers>
           {children}
-          <PromoModal />
+          {/* <PromoModal /> */}
           <Toaster />
         </Providers>
+        <Footer />
       </body>
     </html>
   );

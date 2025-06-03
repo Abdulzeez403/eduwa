@@ -169,12 +169,10 @@ export function ContactSection() {
                         <SelectValue placeholder="Select a service" />
                       </SelectTrigger>
                       <SelectContent>
-                        <SelectItem value="web">Website Development</SelectItem>
-                        <SelectItem value="mobile">
-                          Mobile App Development
-                        </SelectItem>
+                        <SelectItem value="web">LMS</SelectItem>
+                        <SelectItem value="mobile">SMS</SelectItem>
                         <SelectItem value="embedded">
-                          Embedded Systems
+                          Virtual Classroom
                         </SelectItem>
                         <SelectItem value="other">Other</SelectItem>
                       </SelectContent>
