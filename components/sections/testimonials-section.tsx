@@ -5,7 +5,7 @@ import { Quote } from "lucide-react";
 const testimonials = [
   {
     quote:
-      "Eduwa’s learning management system transformed how our school manages courses and tracks student progress. The platform is intuitive and has boosted our student engagement tremendously.",
+      "Eduwa’s innovative digital solutions have transformed how our school operates — from streamlining administration to improving classroom engagement. Their approach goes beyond traditional systems and truly addresses our real challenges.",
     name: "Dr. Amanda Blake",
     position: "Principal, Greenfield High School",
     image:
@@ -13,7 +13,7 @@ const testimonials = [
   },
   {
     quote:
-      "The Eduwa educational app has revolutionized remote learning for our university students. It’s user-friendly and offers personalized content that caters to diverse learning needs.",
+      "Partnering with Eduwa has allowed our university to adopt cutting-edge tools tailored to our needs. Their solutions support remote learning, analytics, and collaboration — all in a seamless way that benefits both students and faculty.",
     name: "Prof. Samuel Lee",
     position: "Head of E-Learning, State University",
     image:
@@ -21,13 +21,14 @@ const testimonials = [
   },
   {
     quote:
-      "Implementing Eduwa’s interactive teaching tools in our classrooms has improved student participation and knowledge retention. Their support team is also incredibly responsive.",
+      "Eduwa’s custom-built tools have boosted student participation and knowledge retention in our classrooms. What sets them apart is their responsiveness and commitment to solving problems that truly matter in education.",
     name: "Jessica Carter",
     position: "Math Teacher, Bright Future Academy",
     image:
       "https://images.pexels.com/photos/774909/pexels-photo-774909.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
   },
 ];
+
 
 export function TestimonialsSection() {
   return (
@@ -78,7 +79,7 @@ export function TestimonialsSection() {
           ))}
         </div>
 
-        <div className="mt-16 bg-primary/5 rounded-lg p-8">
+        {/* <div className="mt-16 bg-primary/5 rounded-lg p-8">
           <div className="grid grid-cols-1 md:grid-cols-4 gap-8 text-center">
             <div>
               <p className="text-3xl font-bold text-primary mb-2">99%</p>
@@ -103,7 +104,7 @@ export function TestimonialsSection() {
               </p>
             </div>
           </div>
-        </div>
+        </div> */}
       </div>
     </section>
   );

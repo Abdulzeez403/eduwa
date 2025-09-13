@@ -10,31 +10,32 @@ import {
 
 const faqs = [
   {
-    question: "What features does Eduwa’s platform offer?",
+    question: "What solutions does Eduwa provide?",
     answer:
-      "Eduwa offers a comprehensive suite of features including course management, student progress tracking, interactive quizzes, video lectures, discussion forums, and personalized learning paths tailored to each student’s needs.",
+      "Eduwa builds impactful digital solutions for education — from learning platforms and student engagement tools to school management systems and analytics dashboards. Every solution is tailored to the unique needs of institutions, educators, and learners.",
   },
   {
     question: "Can Eduwa support remote and hybrid learning?",
     answer:
-      "Absolutely! Eduwa is designed to facilitate both remote and hybrid learning environments. It supports live virtual classrooms, asynchronous content delivery, and seamless communication between teachers and students.",
+      "Yes. Eduwa designs solutions that support both remote and hybrid learning environments, enabling virtual classrooms, digital collaboration, and seamless communication between teachers, students, and parents.",
   },
   {
-    question: "How secure is the Eduwa platform?",
+    question: "How secure are Eduwa’s solutions?",
     answer:
-      "Security is a top priority. Eduwa uses industry-standard encryption, secure authentication, and regular security audits to protect student data and ensure compliance with privacy regulations like FERPA and GDPR.",
+      "Security is at the core of everything we build. Eduwa implements industry-standard encryption, secure authentication, and regular security reviews to safeguard sensitive educational data and ensure compliance with global privacy regulations.",
   },
   {
-    question: "Is there training available for teachers and administrators?",
+    question: "Do you provide training and onboarding?",
     answer:
-      "Yes, we provide comprehensive onboarding and continuous training sessions for teachers and administrators to get the most out of the Eduwa platform. Our support team is also available to assist anytime.",
+      "Absolutely. Eduwa provides comprehensive onboarding and training for educators, administrators, and staff to ensure smooth adoption of our solutions. We also offer ongoing support as needs evolve.",
   },
   {
-    question: "What kind of support is available if I run into issues?",
+    question: "What kind of support can we expect?",
     answer:
-      "We offer 24/7 support through email, chat, and phone. Additionally, our online knowledge base and community forums provide helpful resources and peer support to quickly resolve common issues.",
+      "Our team offers responsive support through email, chat, and calls. In addition, we provide documentation, resources, and knowledge-sharing communities to help educators and institutions get the best out of our solutions.",
   },
 ];
+
 
 export function FaqSection() {
   return (

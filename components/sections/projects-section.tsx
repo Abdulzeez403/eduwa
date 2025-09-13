@@ -13,29 +13,27 @@ import Link from "next/link";
 
 const projects = [
   {
-    title: "Online Learning Management System",
+    title: "Passrite",
     description:
-      "A scalable platform for managing courses, assignments, and student progress with interactive features.",
-    image:
-      "https://images.pexels.com/photos/4145190/pexels-photo-4145190.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
+      "An EdTech platform with gamified quizzes that make learning fun and rewarding. Learners can study, earn points, and convert their rewards into airtime, data, and more.",
+    image: "/images/passrite.png",
     category: "EdTech",
     tags: ["React", "Node.js", "Firebase"],
-    link: "https://online-learning-system.example.com",
+    link: "https://passrite.vercel.app",
   },
   {
-    title: "Virtual Classroom Application",
+    title: "Eduwa Tools",
     description:
-      "A real-time video and chat solution for educators and students to conduct engaging virtual classes.",
-    image:
-      "https://images.pexels.com/photos/1181406/pexels-photo-1181406.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
+      "A discovery hub for the latest educational tools, helping students and educators find innovative solutions for learning and teaching.",
+    image: "/images/eduwatools.png",
     category: "Web Development",
     tags: ["Next.js", "WebRTC", "Tailwind CSS"],
-    link: "https://virtual-classroom.example.com",
+    link: "https://eduwatools.vercel.app",
   },
   {
     title: "Student Performance Analytics",
     description:
-      "An analytics dashboard providing insights into student performance and learning trends for educators.",
+      "An advanced analytics dashboard that delivers actionable insights into student performance and learning trends, empowering educators with data-driven decisions.",
     image:
       "https://images.pexels.com/photos/669615/pexels-photo-669615.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
     category: "Data Analytics",
@@ -43,6 +41,7 @@ const projects = [
     link: "https://student-analytics.example.com",
   },
 ];
+
 
 export function ProjectsSection() {
   return (

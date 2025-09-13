@@ -64,12 +64,11 @@ export function AboutSection() {
                 </div>
                 <h3 className="text-2xl font-bold">Our Journey</h3>
               </div>
-              <p className="text-muted-foreground mb-6">
-                Eduwa was founded with a vision to revolutionize the way
-                knowledge is delivered. What started as a small edtech
-                initiative is now a comprehensive learning platform impacting
-                students, educators, and institutions globally.
-              </p>
+             <p className="text-muted-foreground mb-6">
+  Eduwa was founded with a vision to revolutionize how educational challenges
+  are solved. What started as a small initiative is now a startup building
+  scalable solutions that empower schools, institutions, and learners globally.
+</p>
               <div className="flex items-center gap-4">
                 <Button variant="outline" asChild>
                   <Link href="#contact">
@@ -81,7 +80,7 @@ export function AboutSection() {
           </div>
 
           <div className="grid grid-cols-2 gap-4">
-            <Card className="p-6 bg-primary text-primary-foreground">
+            {/* <Card className="p-6 bg-primary text-primary-foreground">
               <div className="text-3xl font-bold mb-2">
                 <CountUpAnimation end={500} />
               </div>
@@ -104,7 +103,33 @@ export function AboutSection() {
                 <CountUpAnimation end={6} />
               </div>
               <p className="text-accent-foreground/80">Years of Impact</p>
-            </Card>
+            </Card> */}
+
+            <Card className="p-6 bg-primary text-primary-foreground">
+  <div className="text-3xl font-bold mb-2">
+    <CountUpAnimation end={50} />
+  </div>
+  <p className="text-primary-foreground/80">Solutions Delivered</p>
+</Card>
+<Card className="p-6">
+  <div className="text-3xl font-bold mb-2 text-primary">
+    <CountUpAnimation end={120} />
+  </div>
+  <p className="text-muted-foreground">Partners & Institutions</p>
+</Card>
+<Card className="p-6">
+  <div className="text-3xl font-bold mb-2 text-primary">
+    <CountUpAnimation end={10} />
+  </div>
+  <p className="text-muted-foreground">Countries Reached</p>
+</Card>
+<Card className="p-6 bg-accent text-accent-foreground">
+  <div className="text-3xl font-bold mb-2">
+    <CountUpAnimation end={6} />
+  </div>
+  <p className="text-accent-foreground/80">Years of Impact</p>
+</Card>
+
           </div>
         </div>
 

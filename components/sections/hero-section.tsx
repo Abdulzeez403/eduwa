@@ -7,7 +7,7 @@ export function HeroSection() {
   return (
     <section
       id="home"
-      className="relative pt-24 md:pt-32 pb-16 md:pb-24 overflow-hidden"
+      className="relative pt-10 pb-16 md:pb-24 overflow-hidden"
     >
       {/* Background Elements */}
       <div className="absolute inset-0 -z-10">
